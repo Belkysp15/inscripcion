@@ -9,4 +9,4 @@ ENV PHP_ERRORS_STDERR 1
 RUN composer install --no-dev --optimize-autoloader
 
 # Permisos para Laravel
-RUN chown -R fpm:fpm /var/www/html/storage /var/www/html/bootstrap/cache
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
